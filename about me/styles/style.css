@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rock+Salt&display=swap');
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 100px auto;
+    width: 75%;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #343039;
+}
+
+.container h1 {
+    grid-column: span 2;
+    text-align: center;
+}
+.container h2 {
+    text-align: center;
+    font-size: 25px;
+    grid-row: 1fr;
+}
+
+.header div {
+    grid-row: 2;
+    background-color: #ccc;
+    height: 1px;
+    margin: auto auto;
+    width: 75%;
+    
+}
+
+.container img {
+    width: 600px;
+    grid-column: 2;
+    grid-row: span 6;
+    border-radius: 5px;
+}
+
+.container p {
+    grid-column: 1fr;
+    grid-row: 3;
+    padding: 15px;
+    font-size: 20px;
+    
+}
