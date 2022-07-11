@@ -16,7 +16,6 @@ header img {
 }
 
 .header-links {
-    /* needs work */
     display: flex;
     width: 90%;
     gap: 10%;
@@ -32,7 +31,6 @@ body {
 }
 
 .header-links a {
-    /* needs work */
     vertical-align: center;
     background-color: #219ebc;
     padding: 20px;
@@ -40,7 +38,11 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
-
+h4{
+    font-size: x-large;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
 a:link {
     color: black;
     text-decoration: none;
@@ -63,15 +65,45 @@ main {
     background-color: #023047;
 }
 p, li {
-    font-size: larger;
+    font-size: x-large;
     font-family: 'Nunito', sans-serif;
 }
-exercises h4{
-    background-color: #ffb703;
+.exercises{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
 }
-h3 {
+.exercises h4{
+    font-size: xx-large;
+    background-color: #ffb703;
+    padding: 30px;
+    margin-bottom: 0;
+}
+.exercises p, ul{
     background-color: #219ebc;
-    width: 95%;
+    padding: 20px;
+    margin-top: 0;
+}
+.exercises h4, p, ul{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul{
+    list-style: none;
+}
+.exercises img {
+    height: 400px;
+    width: auto;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+main h3 {
+    background-color:#ffb703;
+    width: 97%;
     height: 100px;
     font-size: 45px;
     margin: 10px auto;
@@ -81,11 +113,6 @@ h3 {
     font-size: 50px;
     font-weight: 400;
     line-height: 100px;
-}
-h4{
-    font-size: x-large;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
 }
 
 footer {
