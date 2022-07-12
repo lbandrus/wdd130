@@ -25,13 +25,22 @@ header img {
     padding: 20px;
     text-align: center;
 }
-
+main p, img{
+    margin: 20px;
+}
 body {
     background-color: #023047;
 }
-main div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+main div {
+    width: 45%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
 }
 .header-links a {
     vertical-align: center;
@@ -60,7 +69,20 @@ a:hover {
 a:active {
     color: #219ebc;
 }
+main img{
+    max-width: 650px;
+    max-height: auto;
+    
+}
+main p{
+    background-color: #219ebc;
+    font-family: 'Nunito', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding: 1rem;
+}
 h3{
+    width: 95%;
     font-size: x-large;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
